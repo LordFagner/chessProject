@@ -40,4 +40,11 @@ public piece Piece(position Position){
 
 }
 
+
+public void placePiece(piece Piece , position Position){
+    pieces[Position.getRow()][Position.getLine()]  = Piece;
+    Piece.position = Position;
+
+}
+
 }

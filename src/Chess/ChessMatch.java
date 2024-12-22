@@ -2,12 +2,17 @@ package Chess;
 
 import BoardGames.Board;
 import BoardGames.piece;
+import BoardGames.position;
+import Chess.Pieces.King;
+import Chess.Pieces.Rook;
 
 public class ChessMatch {
     private Board board;
 
     public ChessMatch() {
         board = new Board(8, 8);
+        InitilaSetup();
+
     }
 
 
@@ -20,6 +25,11 @@ public class ChessMatch {
         }
         return pieces;
     }
+private void InitilaSetup(){
+        board.placePiece(new Rook(board, Color.White), new position(2,1));
+    board.placePiece(new King(board, Color.White), new position(0,3));
+    board.placePiece(new King(board, Color.White), new position(7,3));
 
+}
 
 }

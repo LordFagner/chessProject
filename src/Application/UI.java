@@ -10,7 +10,7 @@ public class UI {
             for (int j = 0; j < pieces.length ; j++) {
             PrintPiece(pieces[i][j]);
             }
-            System.err.println();
+            System.out.println();
         }
     System.out.println("  A B C D E F G H");    
 
