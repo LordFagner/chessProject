@@ -14,7 +14,6 @@ private  Board Board;
         return Board;
     }
 
-
-
-
+    public piece() {
+    }
 }

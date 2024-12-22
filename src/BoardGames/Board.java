@@ -1,8 +1,8 @@
 package BoardGames;
 
-public class Board  {
+public class Board {
     private int columns;
-    private  int row;
+    private int row;
     private piece[][] pieces;
 
     public Board(int columns, int row) {
@@ -27,4 +27,17 @@ public class Board  {
     public void setRow(int row) {
         this.row = row;
     }
+
+
+    public piece Piece(int row, int columns ){
+    piece[][] piece1;
+        return pieces[row][columns];
+
+    }
+
+public piece Piece(position Position){
+        return  pieces[Position.getRow()][Position.getLine()];
+
+}
+
 }
